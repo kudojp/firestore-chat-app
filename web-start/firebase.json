@@ -2,11 +2,17 @@
   "hosting": {
     "public": "./public",
     "headers": [{
-      "source" : "**/*.@(js|html)",
-      "headers" : [ {
-        "key" : "Cache-Control",
-        "value" : "max-age=0"
-      } ]
+      "source": "**/*.@(js|html)",
+      "headers": [{
+        "key": "Cache-Control",
+        "value": "max-age=0"
+      }]
     }]
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
   }
 }
